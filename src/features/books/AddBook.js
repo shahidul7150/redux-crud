@@ -15,7 +15,7 @@ console.log(numberofBooks);
     e.preventDefault();
     const book = { id: numberofBooks + 1, title, author };
     dispatch(addBook(book))
-    navigate("/show-books")
+    navigate("/show-books",{replace:true})
 }
 
   return (
